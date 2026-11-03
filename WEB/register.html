@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+
+<body>
+
+    <!-- Pointing action to success.html in the same directory -->
+    <form action="success_post.html" method="post">
+        <fieldset>
+            <legend>Student Registration</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Aisha Nakato" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="ug">Uganda</option>
+                <option value="ke">Kenya</option>
+                <option value="tz">Tanzania</option>
+            </select>
+
+            <p>Gender:</p>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter</label>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear Form</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
